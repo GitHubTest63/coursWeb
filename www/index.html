@@ -1,37 +1,48 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Test page</title>
+		<title>Game Name</title>
 		<meta charset="UTF-8"/>
 	</head>
 	<body>
-		<div id="game">
-			<div id="window" class="HUD">
-				<span>
-					<ul>
-						<li id="infosButton" class="Button">Infos</li>
-						<li id="equipementButton" class="Button">Equipement</li>
-						<li id="statsButton" class="Button">Statistiques</li>
-					</ul>
-				</span>
-				<span id="tabContent" class="CharacterStats">
-					<li style="font-weight:bold" id="characterName" >Ulrich</li>
-					<li id="characterClass">Samouraï</li>
-					<li id="characterLvl">*****</li>
-					<img>"Character Img"</img>
-					<dl>
-						<dt>XP:</dt>
-						<dd>456</dd>
-						<dt>HP:</dt>
-						<dd>4161</dd>
-						<dt>PUISSANCE:</dt>
-						<dd>12</dd>
-					</dl>
-				</span>
+		<div id="screen">
+			<div class="sceneView">
+				<div class="scene">
+					<div id="player" class="Character"/>
+					<div id="enemy_1" class="Enemy"/>
+					<div id="enemy_2" class="Enemy"/>
+				</div>
 			</div>
-			<div id="character" class="Character"/>
-			<div id="enemy_1" class="Enemy"/>
-			<div id="enemy_2" class="Enemy"/>
+			<div id="gui">
+				<div id="mainWindow" class="window">
+					<div class="menu">
+						<ul>
+							<li class="selected">Infos</li>
+							<li>Equipement</li>
+							<li>Statistiques</li>
+						</ul>
+					</div>
+					<div id="infos" class="content">
+						<div class="PlayerName">Ulrich</div>
+						<div class="PlayerClass">Samouraï</div>
+						<div class="PlayerProgress">
+							<div class="PlayerProgressIndicator">
+							</div>
+						</div>
+						<div class="PlayerPreview"></div>
+						<dl>
+							<dt>XP</dt>
+							<dd class="XP">456</dd>
+							<dt>HP</dt>
+							<dd class="HP">120</dd>
+							<dt>PUISSANCE</dt>
+							<dd class="power" >12</dd>
+						</dl>						
+					</div>
+					<div id="equipment" class="content"></div>
+					<div id="stats" class="content"></div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
