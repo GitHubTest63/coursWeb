@@ -5,8 +5,33 @@
 		<meta charset="UTF-8"/>
 	</head>
 	<body>
-	<div>
-	Hello world !
-	</div>
+		<div id="game">
+			<div id="window" class="HUD">
+				<span>
+					<ul>
+						<li id="infosButton" class="Button">Infos</li>
+						<li id="equipementButton" class="Button">Equipement</li>
+						<li id="statsButton" class="Button">Statistiques</li>
+					</ul>
+				</span>
+				<span id="tabContent" class="CharacterStats">
+					<li style="font-weight:bold" id="characterName" >Ulrich</li>
+					<li id="characterClass">Samouraï</li>
+					<li id="characterLvl">*****</li>
+					<img>"Character Img"</img>
+					<dl>
+						<dt>XP:</dt>
+						<dd>456</dd>
+						<dt>HP:</dt>
+						<dd>4161</dd>
+						<dt>PUISSANCE:</dt>
+						<dd>12</dd>
+					</dl>
+				</span>
+			</div>
+			<div id="character" class="Character"/>
+			<div id="enemy_1" class="Enemy"/>
+			<div id="enemy_2" class="Enemy"/>
+		</div>
 	</body>
 </html>
